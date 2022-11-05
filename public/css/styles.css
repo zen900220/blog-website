@@ -1,0 +1,116 @@
+body{
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+#top-menu{
+  background-color: #FAF6FA;
+  padding: 2.5rem 0;
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 300;
+  flex-shrink: 0;
+}
+#top-menu .navbar-brand{
+  font-size: 1.5rem;
+}
+.black-n-blue{
+  color: black;
+}
+.black-n-blue:hover{
+  color: #64d8ea;
+}
+#top-menu .navbar-toggler:focus{
+  box-shadow: none;
+}
+#top-menu .navbar-toggler:active{
+  border: 1.5px #64d8ea solid;
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 0.5rem 0;
+}
+footer{
+  flex-shrink: 0;
+  background-color: #16bc9b;
+  padding: 1rem 0;
+  text-align: center;
+  color: white;
+}
+
+/* compose.ejs styling */
+#compose>.container-md{
+  flex-grow: 1;
+}
+.compose_label{
+  font-weight: bold;
+}
+.compose_title{
+  display: block;
+  width: 100%;
+  margin: 1rem 0;
+}
+.compose_blog{
+  width: 100%;
+  margin: 1rem 0;
+}
+
+/* contact.ejs styling */
+#contact p::first-line{
+  font-weight: bold;
+}
+
+/* home.ejs styling */
+#home .intro::first-letter{
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+#home .home_blogbox{
+  margin: 2rem 0;
+}
+#home .read-more{
+  display: inline;
+}
+#home .read-more button{
+  border:none;
+  background-color: white;
+  padding: 0;
+  color:blue;
+  font-weight: 400;
+}
+#home .add{
+  margin: 2rem 0;
+}
+#home .add button{
+  height: 50px;
+  width: 50px;
+  background-color: #16bc9b;
+  border-radius: 50%;
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+#home .add span{
+  padding-bottom: 6px;
+}
+
+/* posts styling */
+#posts .container-md{
+  flex-grow: 1;
+  position: relative;
+}
+
+#posts pre{
+  white-space: pre-wrap;
+}
+
+#posts form{
+  position: absolute;
+  bottom: 5px;
+}

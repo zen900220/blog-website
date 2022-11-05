@@ -1,0 +1,17 @@
+<%- include("partials/header"); -%>
+
+<!-- middle contents -->
+<section id="compose" class="content">
+  <div class="container-md">
+    <h1>Compose</h1>
+    <form class="" action="/compose" method="post">
+      <label for="title" class="compose_label">Title</label>
+      <input type="text" id="title" name="title" class="compose_title" required>
+      <label for="blog" class="compose_label">Post</label>
+      <textarea id="blog" name="content" class="compose_blog" rows="5" required></textarea>
+      <button type="submit" class="btn btn-primary">Add</button>
+    </form>
+  </div>
+</section>
+
+<%- include("partials/footer"); -%>

@@ -1,0 +1,15 @@
+<%- include("partials/header"); -%>
+
+<!-- middle contents -->
+<section id="posts" class="content">
+  <div class="container-md">
+    <h1><%= title %></h1>
+    <hr>
+    <pre><%= content %></pre>
+    <form class="" action="/posts/<%= title %>" method="post">
+      <button type="submit" class="btn btn-primary">Delete</button>
+    </form>
+  </div>
+</section>
+
+<%- include("partials/footer"); -%>

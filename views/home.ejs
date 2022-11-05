@@ -1,0 +1,26 @@
+<%- include("partials/header"); -%>
+
+<!-- middle contents -->
+<section id="home" class="content">
+  <div class="container-md">
+    <p class="intro">
+      Welcome to Daily Journal, your personal treasure trove of every memory that's worth jotting down.
+    </p>
+    <hr>
+    <% for(let i=0;i<blogs.length;i++){ %>
+      <div class="home_blogbox">
+        <h2><%= blogs[i].title %></h2>
+        <span><%= blogs[i].content.slice(0,100) %></span>
+        <span>...</span>
+        <form class="read-more" action="/posts/<%= blogs[i].title %>" method="get">
+          <button type="submit">read more</button>
+        </form>
+      </div>
+    <% } %>
+    <form class="add" action="/compose" method="get">
+      <button class="" type="submit"><span>+</span></button>
+    </form>
+  </div>
+</section>
+
+<%- include("partials/footer"); -%>
